@@ -12,10 +12,6 @@ type SalesRep struct {
 	BuzzWords string `form:"description"`
 }
 
-type GeneralBuzzWords struct {
-	Word string `form:"word"`
-}
-
 // DB Returns a martini.Handler
 func DB() martini.Handler {
 	session, err := mgo.Dial("mongodb://localhost")
